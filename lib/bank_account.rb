@@ -10,7 +10,10 @@ class BankAccount
   end
 
   def deposit(amount)
+    puts "balance before deposit: #{@balance}"
     @balance += amount
+    puts "balance after deposit: #{@balance}"
+    @balance
   end
 
   def withdraw(amount)
