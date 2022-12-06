@@ -3,9 +3,9 @@ class BankAccount
               :secret_code,
               :balance
 
-  def initialize(id, pin, balance)
+  def initialize(id, pin_num, balance)
     @account_number = id
-    @secret_code = pin
+    @secret_code = pin_num
     @balance = balance
   end
 
@@ -17,7 +17,7 @@ class BankAccount
 
   end
 
-  def verify?(id, pin)
+  def verify?(id, pin_num)
 
   end
 end
