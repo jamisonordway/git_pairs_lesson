@@ -14,6 +14,7 @@ class BankAccount
   end
 
   def withdraw(amount)
+    balance = 195.0
 
   end
 
