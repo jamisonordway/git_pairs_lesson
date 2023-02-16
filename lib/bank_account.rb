@@ -10,14 +10,17 @@ class BankAccount
   end
 
   def deposit(amount)
-    @balance += amount
+    @balance = amount + @balance
   end
 
   def withdraw(amount)
-
+    if @balance > amount
+      @balance -= amount
+    end
+    amount
   end
 
   def verify?(id, pin)
-
+    id == @account_number && pin == @secret_code
   end
 end
